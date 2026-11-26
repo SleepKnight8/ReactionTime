@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SleepKnight8/SleepKnight8_Themes/themes.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Time Reaction</title>
+</head>
+
+<body class="sk-yellow">
+
+    <div class="theme-switch">
+        <button onclick="setTheme('yellow')">🟡</button>
+        <button onclick="setTheme('purple')">🟣</button>
+    </div>
+
+    <main class="game-container">
+
+        <h1>Time Reaction</h1>
+        <p class="subtitle">How fast are your reflexes?</p>
+
+        <button id="btn" onclick="game()">
+            START
+        </button>
+
+
+        <div class="time">
+            <h3>TIME</h3>
+            <p id="Time">-- ms</p>
+        </div>
+
+        <div class="time">
+            <h3>BEST TIME</h3>
+            <p id="bestTime">-- ms</p>
+        </div>
+
+    </main>
+
+    <footer>
+        © 2026 SleepKnight8. All rights reserved.
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/gh/SleepKnight8/SleepKnight8_Themes/themes.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
