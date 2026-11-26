@@ -1,6 +1,7 @@
 let stat = "start";
 let startTime;
 let BestScore = Number(localStorage.getItem("BestScore")) || Infinity;
+document.getElementById("bestTime").innerText = `${BestScore} ms`;
 
 function game() {
     let delay = ran_time();
