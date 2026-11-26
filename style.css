@@ -1,0 +1,150 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: #151a20;
+    font-family: Georgia, serif;
+
+    transition: color 0.3s ease;
+}
+
+/* Themes */
+
+body.sk-yellow {
+    background: #151a20;
+    color: #ffcc36;
+}
+
+body.sk-purple {
+    background: #151a20;
+    color: #a879e8;
+}
+
+/* Theme switch */
+
+.theme-switch {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.theme-switch button {
+    width: 45px;
+    height: 45px;
+    border: 2px solid currentColor;
+    border-radius: 10px;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Game container */
+
+.game-container {
+    flex: 1;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    gap: 12px;
+}
+
+/* Title */
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 2px;
+}
+
+.subtitle {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+/* Reaction button */
+
+#btn {
+    width: 200px;
+    height: 150px;
+
+    margin: 15px 0;
+
+    border: 2px solid currentColor;
+    border-radius: 12px;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+/* Best time */
+
+.time {
+    text-align: center;
+}
+
+.time h3 {
+    font-size: 21px;
+}
+
+#Time {
+    margin-top: 8px;
+    font-size: 20px;
+}
+#bestTime {
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+/* Footer */
+
+footer {
+    margin-bottom: 20px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 29px;
+    }
+
+    #btn {
+        width: 170px;
+        height: 130px;
+    }
+}
+#btn {
+    transition: transform 0.2s ease,
+                background-color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+#btn:hover {
+    transform: scale(1.04);
+}
+
+#btn:active {
+    transform: scale(0.94);
+}
