@@ -61,3 +61,4 @@ function game() {
 function ran_time(){
     return  Math.random() * (12000 - 800) + 800;
 }
+//
